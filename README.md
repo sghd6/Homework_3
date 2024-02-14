@@ -7,4 +7,4 @@ types of media products and implemenHng a singleton class for managing the shop'
 - Jack Riebel
 - Grant Eckhardt
 - Ryan Doak
-- Spencer
+- Spencer Hunt
