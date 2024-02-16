@@ -2,7 +2,7 @@ package m.mediaProduct;
 
 public class TapeRecordProduct extends MediaProduct {
 
-    // Constructor that uses the 'super' keyword to initialize attributes inherited from MediaProduct
+    // Constructor that uses attributes inherited from MediaProduct
     public TapeRecordProduct(String title, double price, int year, Genre genre) {
         super(title, price, year, genre);
     }
