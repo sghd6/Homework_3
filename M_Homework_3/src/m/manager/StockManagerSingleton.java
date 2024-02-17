@@ -98,7 +98,13 @@ public class StockManagerSingleton {
 
 ///////updateItemPrice Function
 	public boolean updateItemPrice(MediaProduct product, double newPrice) {
-		for ()
+		for (int i = 0; i < mediaProducts.length; i++ ) {
+			if (mediaProducts[i].equals(product)) {
+				mediaProducts[i].setPrice(newPrice);
+				return true;
+			}
+		}
+		return false;
 	}
 
 ///////removeItem Function
