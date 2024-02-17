@@ -1,3 +1,6 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
 package m.manager;
 
 public class StockManagerSingleton {
@@ -61,6 +64,7 @@ public class StockManagerSingleton {
 		}
     	return true;
     }
+    
 ///////AddItem Function
 
     public boolean addItem(MediaProduct mediaProduct) {
@@ -78,7 +82,7 @@ public class StockManagerSingleton {
     	}
     	return true;
         
-    }
+    }    
     
 //////Get Instance Function
     public static StockManagerSingleton getInstance(String filePath) {
@@ -92,3 +96,24 @@ public class StockManagerSingleton {
 
 }
 
+///////updateItemPrice Function
+	public boolean updateItemPrice(MediaProduct product, double newPrice) {
+		for ()
+	}
+
+///////removeItem Function
+	public boolean removeItem(MediaProduct product) {
+		
+	}
+
+///////saveStock Function
+	public boolean saveStock() {
+		try(BufferedWriter writer = newBufferedWriter(new FileWriter(iventoryFilePath))){
+			for (MediaProduct product : MediaProducts) {
+				writer.write(product.getType() + ',' + product.getTitle() + ',' + product.getPrice() +
+						',' + product.getYear() + ',' + product.getGenre() + '\n');
+			}
+			return true;
+		} catch (IOException e) {
+		e.printStackTrace();
+	}
